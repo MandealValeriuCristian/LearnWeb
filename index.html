@@ -1,78 +1,37 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-        <title>Semantic Elements</title>        
-        <style>
-            #header{
-                background-color: lightseagreen;
-                padding: 24px;
-            }
-            #navbar{
-                background-color: lightcoral;
-                padding: 16px;
-            }
-            #main-section{
-                background-color: lightgrey;
-                padding:24px
-            }
-            #section{
-                background-color: lightslategray;
-                padding: 16px;
-            }
-            .article{
-               background-color: lightgreen; 
-               padding: 16px;
-               margin-top: 16px;
-               margin-bottom: 16px;
-            }
-            #footer{
-                background-color: lightskyblue;
-                padding: 24px;
-            }
-        </style>
+         <title>Semantic Tags - Details and Summary</title>        
+        
     </head>
-    <body style="margin: 0">
-            <header>
-                <nav id="navbar">
-                    <span>Menu 1</span>
-                    <span>Menu 2</span>
-                    <span>Menu 3</span>
-                </nav>
-            </header>
-            <Main id="main-section">
-                <section id="section">
-                    <article class="article">
-                        <header id="header">
-                            <h3>Article title one</h3>
-                            <a href="/">Author One</a>
-                            </header>
-                            <p>Lorem Ipsum Dolor.
-                                Lorem Ipsum Dolor.
-                                Lorem Ipsum Dolor.
-                                Lorem Ipsum Dolor.
-                                Lorem Ipsum Dolor.
-                            </p>
-                            
-                        
-                    </article>
-                    <article class="article">
-                        <header id="header">
-                            <h3>Article title two</h3>
-                            <a href="/">Author two</a>
-                            </header>
-                            <p>Lorem Ipsum Dolor.
-                                Lorem Ipsum Dolor.
-                                Lorem Ipsum Dolor.
-                                Lorem Ipsum Dolor.
-                                Lorem Ipsum Dolor.
-                            </p>
-                            
-                        
-                    </article>
-                </section>
-            </Main>
-            <footer id="footer">
-             <p>Copyright 2021</p>   
-            </footer>
+    <body>
+    <details>
+        <summary>
+           Chapter One
+        </summary>
+        <p>This is an introductory chapter.</p>
+    </details>
+    <details>
+        <summary>
+           Chapter Two
+        </summary>
+        <ul>
+            <li>Heading</li>
+            <li>Paragraph</li>
+            <li>Links</li>
+        </ul>
+    </details>
+    <details>
+        <summary>
+           Chapter Three
+        </summary>
+        <a href="https://www.edyoda.com" target="_blank">EdYoda</a>
+    </details>
+    <details>
+        <summary>
+           Chapter Four
+        </summary>
+        <p>This is a hidden text</p>
+    </details>
     </body>
 </html>
