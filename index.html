@@ -1,77 +1,13 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-         <title>Create a Signup Form</title>        
-        <style>
-            #register-form{
-                width: 300px;
-                background-color: white;
-                padding: 24px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .input-label{
-                margin: 0;
-                margin-bottom: 4px;
-                margin-top: 12px;
-            }
-            .input-item
-            {
-                width: 100%;
-            }
-            #terms-check
-            {
-                margin-top:12px;
-                margin-bottom: 18px;
-            }
-        </style>
+         <title>HTML5 - Video</title>        
     </head>
-    <body style="background-color: lightblue;">
-        <h1 style="text-align: center;">Signup</h1>
-       <form id="register-form" method="POST">
-           <div>
-               <p class="input-label">Full Name:</p>
-               <input class="input-item"type="text" name="full-name" required>
-           </div>
-           <div>
-               <p class="input-label">Email:</p>
-               <input class="input-item" type="email" name ="email"required>
-           </div>
-           <div>
-               <p class="input-label">Age:</p>
-               <input class="input-item" type="number" name="age" min="18" max="46">
-           </div>
-           <div>
-               <p class="input-label">Password:</p>
-               <input class="input-item" type="password"name="password" required maxlength="8">
-           </div>
-           <div>
-            <p class="input-label">Confirm Password:</p>
-            <input class="input-item" type="password"name="confirm-password" maxlength="8">
-           </div>
-           <div>
-               <p class="input-label">Gender:</p>
-               <input type="radio" name="male" value="male">Male</input>
-               <input type="radio" name="female" value="female">Female</input>
-               <input type="radio" name="other" value="other">Other</input>
-            </div>
-            <div>
-               <p class="input-label">Security Question:</p>
-                <select class="input-item" name="security-question">
-                    <option value="first-pet-name">What was your first pet name</option>
-                    <option value="first-job">What was your first job?</option>
-                    <option value="nick-name">Waht is your nickname?</option>
-                </select>
-            </div>
-            <div>
-                <textarea class="input-item" name="answer" rows="6" cols="30"> 
-                </textarea>
-            </div>
-            <div|>
-                <input id="terms-check"type="checkbox" name="terms-conditions"
-                value="accept">I agree to accept terms and conditions.
-            </div>
-            <input type="submit" value="Register">
-       </form>
+    <body>
+        <video controls width="300" height="300" autoplay>
+            <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm">
+            <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+        </video>
+
     </body>
 </html>
