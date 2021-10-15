@@ -1,15 +1,46 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-         <title>Intro to HTML Forms</title>        
+         <title>Craete a Signup Form</title>        
         
     </head>
     <body>
-        <form>
-            Username:<br><input type="text" name="username">
-            <br>Password:<br><input type="password" name="password">
-            <br>
-            <input type="submit" value="Login">
-        </form>
+       <form>
+           <div>
+               Full Name:<br>
+               <input type="text" name="full-name">
+           </div>
+           <div>
+               Email:<br>
+               <input type="email" name ="email">
+           </div>
+           <div>
+               Password:<br>
+               <input type="password"name="confirm-password">
+           </div>
+           <div>
+               Gender:<br>
+               <input type="radio" name="male" value="male">Male</input>
+               <input type="radio" name="female" value="female">Female</input>
+               <input type="radio" name="other" value="other">Other</input>
+            </div>
+            <div>
+                Security Question:<br>
+                <select name="security-question">
+                    <option value="first-pet-name">What was your first pet name</option>
+                    <option value="first-job">What was your first job?</option>
+                    <option value="nick-name">Waht is your nickname?</option>
+                </select>
+            </div>
+            <div>
+                <textarea name="answer" rows="6" cols="30"> 
+                </textarea>
+            </div>
+            <div|>
+                <input type="checkbox" name="terms-conditions"
+                value="accept">I agree to accept terms and conditions.
+            </div>
+            <input type="submit" value="Register">
+       </form>
     </body>
 </html>
