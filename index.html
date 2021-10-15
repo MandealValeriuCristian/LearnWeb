@@ -1,39 +1,15 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-         <title>Image Gallery using Table</title>        
-        <style>
-            .image-item
-            {
-                width: 450px;
-                height: 300px;
-            }
-            .caption
-            {
-                font-size:24px;
-                margin-top:8px;
-            }
-        </style>
+         <title>Intro to HTML Forms</title>        
+        
     </head>
     <body>
-        <h1 style="text-align: center;">Beatiful places in the world</h1>
-    <table style="text-align: center; margin-left: auto; margin-right: auto;">
-        <tr>
-            <td><img class="image-item" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hbz-venice-gettyimages-489741024-1505338894.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Venice, Italy"/>
-            <p class="caption">Venice, Italy</p></td>
-            <td><img class="image-item" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/banff-517747003-1494616292.jpg?crop=0.9997418022205009xw:1xh;center,top&resize=980:*" alt="Banff National Park, Canada"/><p class="caption">Banff National Park, Canada</p></td>
-            <td><img class="image-item" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/great-ocean-road-128394846-1494616348.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Great Ocean Road, Australia"/><p class="caption">Great Ocean Road, Australia</p></td>
-        </tr>
-        <tr>
-            <td><img class="image-item" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hbz-machu-ppichu-gettyimages-629556601-1505338681.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Machu Picchu"/><p class="caption">Machu Picchu</p></td>
-            <td><img class="image-item" src="https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/16/1280x1919/japan-gettyimages-137098062.jpg?resize=980:*" alt="Japan in Cherry Blossom Season"/><p class="caption">Japan in Cherry Blossom Season</p></td>
-            <td><img class="image-item" src="https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/16/bora-bora-gettyimages-575766591.jpg?crop=1.0xw:1xh;center,top&resize=980:*" alt="Bora Bora, French Polynesia"/><p class="caption">Bora Bora, French Polynesia</p></td>
-        </tr>
-        <tr>
-            <td><img class="image-item" src="https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/16/1461265325-santorini-gettyimages-107741204.jpg?crop=1.0xw:1xh;center,top&resize=980:*" alt="Oia, Santorini, Greece"/><p class="caption">Oia, Santorini, Greece</p></td>
-            <td><img class="image-item" src="https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/16/tamil-nadu-gettyimages-152415224.jpg?crop=1.0xw:1xh;center,top&resize=980:*" alt="Tamil Nadu, India"/><p class="caption">Tamil Nadu, India</p></td>
-            <td><img class="image-item" src="https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/16/havasu-gettyimages-rh252-10343_1.jpg?crop=1.0xw:1xh;center,top&resize=980:*" alt="Havasu Falls, Arizona"/><p class="caption">Havasu Falls, Arizona</p></td>
-        </tr>
-    </table>
+        <form>
+            Username:<br><input type="text" name="username">
+            <br>Password:<br><input type="password" name="password">
+            <br>
+            <input type="submit" value="Login">
+        </form>
     </body>
 </html>
