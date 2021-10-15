@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-         <title>Craete a Signup Form</title>        
+         <title>Create a Signup Form</title>        
         <style>
             #register-form{
                 width: 300px;
@@ -28,22 +28,26 @@
     </head>
     <body style="background-color: lightblue;">
         <h1 style="text-align: center;">Signup</h1>
-       <form id="register-form">
+       <form id="register-form" method="POST">
            <div>
                <p class="input-label">Full Name:</p>
-               <input class="input-item"type="text" name="full-name">
+               <input class="input-item"type="text" name="full-name" required>
            </div>
            <div>
                <p class="input-label">Email:</p>
-               <input class="input-item" type="email" name ="email">
+               <input class="input-item" type="email" name ="email"required>
+           </div>
+           <div>
+               <p class="input-label">Age:</p>
+               <input class="input-item" type="number" name="age" min="18" max="46">
            </div>
            <div>
                <p class="input-label">Password:</p>
-               <input class="input-item" type="password"name="password">
+               <input class="input-item" type="password"name="password" required maxlength="8">
            </div>
            <div>
             <p class="input-label">Confirm Password:</p>
-            <input class="input-item" type="password"name="confirm-password">
+            <input class="input-item" type="password"name="confirm-password" maxlength="8">
            </div>
            <div>
                <p class="input-label">Gender:</p>
