@@ -1,16 +1,9 @@
-#paragraph{
-    border: 3px solid blue;
-   /*padding:16px;
-   padding-top: 16px;
-   padding-left: 24px;
-   padding-right: 20px;
-   padding-bottom: 28px; */
-   padding: 16px 20px 24px 28px;
-   padding:24px 28px;
-   margin:48px;
-   margin-top: 48px;
-   margin-left: 60px;
-   margin-right: 24px;
-   margin-bottom: 24px;
-   margin:48px 60px;
+#ordered-list{
+    list-style-type: lower-greek;
+    width: 500px;
+    list-style-position: inside;
+}
+#unordered-list {
+    list-style-type: none;
+    padding-left: 0;
 }
