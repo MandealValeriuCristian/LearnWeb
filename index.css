@@ -1,32 +1,19 @@
-#article-wrapper{
-    padding:4% 16%;
-}
-article{
-    padding-bottom:48px;
-    font-size: 24px;
-    line-height: 1.4;
-}
-.article-pic{
+#div1{
     width: 300px;
-    height: 200px;
-    float:left;
-    margin-right: 16px;
-
+    height: 300px;
+    font-size: 24px;
+    background-color: lightcoral;
+    padding: 60px;
 }
-#second-img{
-    float:right;
-    margin-left: 16p;
+#div2{
+    width: 300px;
+    height: 300px;
+    font-size: 24px;
+    background-color: burlywood;
+    margin-top: 24px;
+    padding: 80px;
+    box-sizing: border-box;
 }
-
-.menu-item{
-    margin:0;
-    margin-right: 24px;
-    font-family: 'Raleway',sans-serif;
-    font-weight: 500;
-    position: relative;
-    top: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    float:right;
-    
+.image{
+    width: 100%;
 }
