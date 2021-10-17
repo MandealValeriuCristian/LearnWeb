@@ -67,3 +67,44 @@ nav{
     height: 48px;
     border-radius: 24px;
 }
+main{
+    padding: 4% 0;
+    max-width: 1200px;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+.blog-heading{
+    margin: 0;
+    padding: 16px;
+    font-size: 16px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600;
+    color:rgba(0, 0, 0,0.9);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.blog-image{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blog-card{
+    width: 23%;
+    min-width: 200px;
+    height: auto;
+    vertical-align: top;
+    margin: 8px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #aaa;
+    cursor: pointer;
+}
+.blog-card:hover{
+    box-shadow: 0 5px 10px #aaa;
+}
