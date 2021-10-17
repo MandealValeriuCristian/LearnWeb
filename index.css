@@ -1,12 +1,20 @@
 div{
     width: 300px;
-    height: 150px;
+    height: 300px;
     margin: 48px;
     background-color: lightgreen;
     position: absolute;
-    left:50%;
-    top:50%;
-    /* transform: translateX(-50%);
-    transform: translateY(-50%); */
-    transform: translate(-50%, -50%);
+    /* transition-property: background-color;
+    transition-duration: 1000ms;
+    transition-timing-function: linear; */
+    transition:  border-radius 3s ease-in, background-color 3s ease-in;;
+    
+}
+div:hover{
+background-color: lightsalmon;
+border-radius: 150px;
+}
+#div2{
+    background-color: bisque;
+    transition-timing-function:  3s ease-out;
 }
