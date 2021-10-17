@@ -1,28 +1,22 @@
 console.clear()
-var num1=10; // integer
-var num2=10.9; // decimal number
-console.log(typeof(num1));
-console.log(typeof(num2));
+var num1 = 10;
+var num2 = 20.3
+// toString() number as input and returns a string
+console.log(num1.toString())
+console.log(num2.toString())
 
-var num3 = 15;
-var sum = num3 + num1 + num2;
-console.log(sum); // addition
 
-// substraction
-var diff = num3 - num1;
-console.log(diff);
+var strNum1 = "10";
+var strNum2 = "11.5"
+var strNum3 = "ABC";
+// parseInt() string numeral as input and returns a number
+console.log(parseInt(strNum1))
+console.log(parseInt(strNum2))
+console.log(parseInt(strNum3))
 
-// multiplication
-var mul = num3 * num1;
-console.log(mul);
+// toFixed() takes floating number and rounds it off to given positioon
 
-// division
-var div = num3 / num1;
-
-var divByZero = num3 /0 ;
-console.log(divByZero);
-console.log(typeof(divByZero));
-
-var mulByString = num3 * 'A';
-console.log(mulByString);
-console.log(typeof(mulByString));
+var strFloat = 87.987653;
+console.log(strFloat.toFixed());
+console.log(strFloat.toFixed(2));
+console.log(strFloat.toFixed(5));
