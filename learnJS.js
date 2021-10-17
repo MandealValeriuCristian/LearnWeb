@@ -1,23 +1,38 @@
-var myFirstString = "This is a string for Javascript string functions"
+var exampleString = "This is Javascript tutorial"
 
-// retunrs the length of the string
-console.log(myFirstString.length)
+// toUpperCase() - it converts our string -> uppercase characters
+console.log(exampleString.toUpperCase())
 
-// find index of a string insde another string
-console.log(myFirstString.indexOf('Javascript'))
-console.log(myFirstString.indexOf('This'))
+// toLowerCase() - it converts our string -> lowercase characters
+console.log(exampleString.toLocaleLowerCase())
 
-// find LAST index of a string inside another string
-console.log(myFirstString.lastIndexOf('Javascript'))
-console.log(myFirstString.lastIndexOf('This'))
+// concat() - it merges two or more strings
+var firstName = "JavaScript"
+var lastName = "Playground"
+console.log(exampleString.concat(firstName))
+console.log(exampleString.concat(' ',firstName,' ' ,lastName))
 
-// get a part of our string slice(start, end)
-console.log(myFirstString.slice(0,4))
-console.log(myFirstString.slice(21,31))
-console.log(myFirstString.slice(-10)) 
-console.log(myFirstString.slice(5))
+// we can also use '+' to concat two or more strings
+console.log(firstName + ' ' + lastName + ' ' + exampleString)
 
-// get sub string function - substr(startPos, length)
-console.log(myFirstString.substr(0,4))
-console.log(myFirstString.substr(21,10))
-console.log(myFirstString.substr(21))
+// trim() - it removes extra spaces
+var extraSpaceString = '               my string         '
+console.log(extraSpaceString.trim())
+
+var extraSpaceStringExample2 = '             mystring        '
+console.log(extraSpaceStringExample2.trim())
+
+// charAt() -> this take a position as an arg and returns the character at that position
+var charAtExampleString = 'This is my test string'
+console.log(charAtExampleString.charAt(5))
+console.log(charAtExampleString.charAt(11))
+
+// split() - splits our string on the bases of the arguments passed
+var sampleString = "This is my sample string"
+console.log(sampleString.split(' '))
+
+var sampleString2 = "This,is,my,sample,string"
+console.log(sampleString2.split(','))
+
+var sampleString3 = "This is awesome"
+console.log(sampleString3.split())
