@@ -1,39 +1,55 @@
-h1{
-    color: black;
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-    letter-spacing: 4px;
-    font-size: 48px;
+body{
+    margin:0;
+    font-size: 24px;
 }
-.movie-poster{
-    width: 100%;
-    max-width: 400px;
-    box-sizing: border-box;
+#header{
+    background-color: lightseagreen;
+    padding:24px;
+    grid-area: header;
+}
+#sidebar{
+    background-color: lightsalmon;
+    padding:24px;
+    grid-area: sidebar;
+}
+#main{
+    background-color: lightblue;
+    padding:24px;
+    height: 460px;
+    grid-area: main;
+}
+#aside{
+    background-color: bisque;
+    padding:24px;
+    grid-area: aside;
+}
+#footer{
+    background-color: lightseagreen;
+    padding:24px;
+    grid-area: footer;
 }
 #grid-container{
     display:grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 16px;
-    justify-content: start;
-}
-@keyframes zoom 
-{
-0% {
-    transform: scale(1);
-    box-shadow: 0 2px 5px #ccc;
-}    
-100%{
-    transform: scale(1.1);
-}
-
+    grid-template-areas: 'header header header header header header'
+    'sidebar main main main main aside'
+    'footer footer footer footer footer footer';
 }
 @media (max-width: 900px){
     #grid-container{
-        grid-template-columns: auto auto auto;
+        display:grid;
+        grid-template-areas: 'header header header header header header'
+        'sidebar main main main main main'
+        'aside aside aside aside aside aside'
+        'footer footer footer footer footer footer';
     }
 }
 @media (max-width: 400px){
     #grid-container{
-        grid-template-columns: auto;
+        display:grid;
+        grid-template-areas: 'header header header header header header'
+        'sidebar sidebar sidebar sidebar sidebar sidebar'
+        'main main main main main main'
+        'aside aside aside aside aside aside'
+        'footer footer footer footer footer footer';
     }
 }
