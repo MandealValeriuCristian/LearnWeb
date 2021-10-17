@@ -1,22 +1,20 @@
-console.clear()
-var num1 = 10;
-var num2 = 20.3
-// toString() number as input and returns a string
-console.log(num1.toString())
-console.log(num2.toString())
+var myFirstString = "I love JavaScript"
 
+console.log(typeof(myFirstString))
 
-var strNum1 = "10";
-var strNum2 = "11.5"
-var strNum3 = "ABC";
-// parseInt() string numeral as input and returns a number
-console.log(parseInt(strNum1))
-console.log(parseInt(strNum2))
-console.log(parseInt(strNum3))
+var mySecondString = "We will learn JavaScript together"
+console.log(typeof(mySecondString))
 
-// toFixed() takes floating number and rounds it off to given positioon
+// What if my string contains a double quote
 
-var strFloat = 87.987653;
-console.log(strFloat.toFixed());
-console.log(strFloat.toFixed(2));
-console.log(strFloat.toFixed(5));
+var doubleQuotesString = "This is a \"JavaScript\" string"
+console.log(doubleQuotesString)
+
+// What if my string contains a single quote
+var singleQuotesString = 'This is a \'JavaScript\' string'
+console.log(singleQuotesString)
+
+var doubleQuotesString2 = "This is a 'JavaScript' string"
+var singleQuotesString2 = 'This is "JavaScript" string'
+console.log(doubleQuotesString2)
+console.log(singleQuotesString2)
