@@ -3,14 +3,13 @@ body{
 }
 #container{
     width: 100vw;
-    height: 700px;
+    height: 400px;
     background-color: lightblue;
     box-sizing: border-box;
     padding:32px;
 
     display: flex;
-    flex-wrap: wrap;
-   flex-direction: column;
+    
   
 }
 .item{
@@ -20,4 +19,18 @@ body{
     padding: 32px;
     font-size: 24px;
     text-align: center;
+    flex-basis: 120px ;
+}
+/* .item:nth-child(2)
+{
+    background-color: bisque;
+    order: 1;
+} */
+.item:nth-child(odd)
+{
+    align-self: flex-start;
+}
+.item:nth-child(even){
+    background-color: bisque;
+    align-self: center;
 }
