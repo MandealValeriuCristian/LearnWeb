@@ -1,5 +1,5 @@
-var mVar // mvar holds no value
-console.log(mVar)
-
-mVar = null // mVar holds the value null
-console.log(mVar)
+if (5 > 7)
+console.log('5 > 7')
+else if ( 7>8)
+console.log('7 > 8')
+else console.log('Nothing')
