@@ -1,17 +1,22 @@
-if( 5 == '5' ) console.log(true)
-if( 5 == 5) console.log(true); else console.log(false)
-if( 5 != 4) console.log(true); else console.log(false)
-if( 5 != '5') console.log(true); else console.log(false)
-if( 5 !== '5') console.log(true); else console.log(false)
-if( 15 <15 ) console.log(true); else console.log(false)
-if( 15 <= 15) console.log(true); else console.log(false) 
-if( 15 > 15) console.log(true); else console.log(false)
-if( 15>= 15) console.log(true); else console.log(false)
+var mStr = 'Hello'
+var mNum = 5
+var mSum = mStr + mNum
 
-// Logical Operators &&, ||, !
-if( 5 > 10 && 10 > 15) console.log(true); else console.log(false)
-console.log(5 < 10 || 10 < 15)
-console.log(5 < 10)
+console.log(mSum)
+console.log(typeof(mSum))
 
-// Ternary Operator (expression) ? a : b
-20 < 3 ? console.log(true) : console.log(false)
+console.log(null + 'hola')
+console.log(typeof(null + 'hola'))
+
+console.log(50 + 'hola')
+console.log(typeof(50 + 'hola'))
+
+console.log(+'2')
+
+var mValue = +'Apple'
+console.log(mValue)
+console.log(typeof(mValue))
+
+if(true)
+console.log('true') 
+else console.log('false')
