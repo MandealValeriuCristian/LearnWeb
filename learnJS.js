@@ -1,22 +1,22 @@
-var mNum = 15
-console.log(typeof(String(mNum)))
-console.log(typeof(String(true)))
-console.log(typeof(String(-98.12)))
-console.log(typeof(String(null)))
-console.log(typeof(String(undefined)))
+var nAgera = {
+    name: "Agera",
+    manufacturer:{
+        name: "Koenigsegg",
+        location: "Sweden"
+    },
+    topSpeed: 429,
+    color: "Black",
+    spoilers: false,
+    applyBrakes: function(){
+        setTimeout(function(){
+            console.log('Car Stopped')        
+        }, 5000)
+    }
+}
 
-// To Number
-console.log(typeof(Number('2')))
-console.log(Number(true), typeof(Number(true)))
-console.log(Number(false), typeof(Number(false)))
-console.log(Number('-90.234'), typeof(Number('-90.234')))
-console.log(Number('apple'), typeof(Number('apple')))
-
-
-// To Boolean
-console.log(Boolean(1), typeof(Boolean(1)))
-console.log(Boolean(0), typeof(Boolean(0)))
-console.log(Boolean('apple'), typeof(Boolean('apple')))
-console.log(Boolean(null), typeof(Boolean(null)))
-console.log(Boolean(undefined), typeof(Boolean(undefined)))
-console.log(Boolean(''), typeof(Boolean('')))
+console.log(nAgera.name)
+console.log(nAgera.topSpeed)
+console.log(nAgera.manufacturer)
+console.log(nAgera.manufacturer.name)
+// console.log(nAgera.applyBrakes())
+console.log(nAgera.applyBrakes)
