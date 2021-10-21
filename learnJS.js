@@ -1,10 +1,18 @@
-// while(condition){
-//     //block of code
-// }
+var list = [1, 2, 3, 4, 5]
+// var position;
+// for(position=0; position < list.length; position++)
+// console.log('Position => ' + position + ' Value => '+ list[position])
 
-var value=0;
-while(value < 50){
-    value++;
+// break keyword
+var position;
+for(position=0; position < list.length; position++){
+if(position >= 3) break
+console.log('Position => ' + position + ' Value => '+ list[position])
 }
 
-console.log(value);
+// continue keyword
+var position
+for(position = 0; position < list.length; position++)
+{if(position % 2 !==0) continue
+    console.log('Position => ' + position + ' Value => '+ list[position])
+}
