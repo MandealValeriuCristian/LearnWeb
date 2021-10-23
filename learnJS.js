@@ -1,13 +1,16 @@
 console.log('Script Loaded')
-var countdownElement = document.getElementById("countdown")
-var bgImage = document.getElementById("bg-image")
-var initialCountdownVal = countdownElement.innerHTML;
+var btn = document.getElementById('btn-click')
+var mainDiv = document.querySelector("header div")
+function onBtnClick(){
+    var randomNum = Math.floor(Math.random() * 255)
+    
+    mainDiv.style.backgroundColor = "rgb("+Math.floor(Math.random() * 255)
+    + "," + Math.floor(Math.random() * 255) + ","
+     + Math.floor(Math.random() * 255)+")"
+}
+// btn.onclick = onBtnClick;
+// btn.addEventListener('click', function(){
+//     alert('Anonymous Function Called')
+// })
 
-var interval = setInterval(function() {
-    initialCountdownVal = initialCountdownVal > 0 ? initialCountdownVal-1 : 0;
-    countdownElement.innerHTML = initialCountdownVal
-    countdownElement.style.fontSize = initialCountdownVal * 100 + "px"
-    bgImage.style.width= initialCountdownVal*10+"%"
-   if(initialCountdownVal <= 0)
-    clearInterval(interval)
-}, 1000);
+btn.addEventListener('click', onBtnClick)
