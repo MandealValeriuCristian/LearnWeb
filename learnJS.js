@@ -1,19 +1,23 @@
-var username = document.getElementById('username');
-var loginForm = document.getElementById('login-form');
-username.addEventListener('input', function(){
-    var currentValue = event.target.value;
-    currentValue = currentValue.toUpperCase();
-    username.value=currentValue;
-    console.log(currentValue)
-})
-username.addEventListener('focus', function(){
-    console.log('Element Focussed')
-})
-username.addEventListener('blur', function(){
-    console.log('Element Lost Focus')
+document.body.addEventListener('keydown', function(e){
+var keyCode = e.keyCode; 
+if(keyCode === 16)
+    console.log('Keydown for => ' + keyCode)
 })
 
-loginForm.addEventListener('submit', function(e){
-    alert('Submit Button Clicked')
-    e.preventDefault();
-})
+
+document.body.addEventListener('keyup', function(e){
+    var keyCode = e.keyCode; 
+    if(keyCode === 16)
+        console.log('KeyUp for => ' + keyCode)
+    })
+    
+
+    document.body.addEventListener('keypress', function(e){
+        var keyCode = e.keyCode; 
+        if(keyCode === 16)
+            console.log('KeyPress for => ' + keyCode)
+        })
+        
+            
+                 
+        
