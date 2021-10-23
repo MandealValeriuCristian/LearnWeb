@@ -1,23 +1,38 @@
-document.body.addEventListener('keydown', function(e){
-var keyCode = e.keyCode; 
-if(keyCode === 16)
-    console.log('Keydown for => ' + keyCode)
+var btn = document.getElementById('top-btn');
+
+btn.addEventListener('mousedown', function(){
+    console.log('Mouse Down Event')
+})
+btn.addEventListener('mouseup', function(){
+    console.log('Mouse Up Event')
 })
 
+btn.addEventListener('click', function(){
+    console.log('Click Event')
+})
+btn.addEventListener('dblclick', function(){
+    console.log('Double Click Event')
+})
 
-document.body.addEventListener('keyup', function(e){
-    var keyCode = e.keyCode; 
-    if(keyCode === 16)
-        console.log('KeyUp for => ' + keyCode)
-    })
-    
+var overCount = 0;
+var over = document.getElementById('over')
+over.addEventListener('mouseover', function(){
+    var countElement = document.querySelector('#over > p')
+    overCount += 1;
+    countElement.innerHTML = overCount;
+})
+var enter = document.getElementById('enter')
+var enterCount = 0;
+enter.addEventListener('mouseenter', function(){
+    var countElement = document.querySelector('#enter > p')
+    enterElement += 1;
+    countElement.innerHTML = enterCount;
+})
 
-    document.body.addEventListener('keypress', function(e){
-        var keyCode = e.keyCode; 
-        if(keyCode === 16)
-            console.log('KeyPress for => ' + keyCode)
-        })
-        
-            
-                 
-        
+var moveElement = document.getElementById('move')
+var moveCount = 0;
+moveElement.addEventListener('mousemove', function(){
+    var countElement = document.querySelector('#move > p')
+    moveCount += 1;
+    countElement.innerHTML= moveCount;
+})
