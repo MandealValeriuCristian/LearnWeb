@@ -1,20 +1,21 @@
-console.log('Script Loaded')
+console.log("Script Loaded")
 var mainHeading = document.getElementById("main-heading");
+var btnDecreaseFont = document.getElementById("btn-decrease");
+var btnIncreaseFont = document.getElementById("btn-increase");
 
- var btn = document.getElementById('btn-click')
+var initialFontSize = window.getComputedStyle(mainHeading).fontSize;
+initialFontSize = parseInt(initialFontSize.substr(0, (initialFontSize.Length - 2)));
 
-var sidebar = document.getElementById('sidebar')
-var toggleButton = document.getElementById('toggle-icon')
- mainHeading.classList.add('big')
- btn.addEventListener('click', function() {
-     if(sidebar.classList.contains('show')){
-        sidebar.classList.remove('show')
-        sidebar.classList.add('hide')
-     }
-     else{
-        sidebar.classList.add('show')
-        sidebar.classList.remove('hide')
-     }
-    sidebar.classList.remove('show')
+// mainHeading.style.fontSize = parseInt(initialFontSize) +100 +"px"
+btnIncreaseFont.onclick = function(){
+    initialFontSize += 10;
+    mainHeading.style.fontSize = initialFontSize+"px";
+}
+btnDecreaseFont.addEventListener("click", function(){
+    initialFontSize -= 10;
+    mainHeading.style.fontSize = initialFontSize+"px";
 })
+// console.log(btnDecreaseFont.style)
+// console.log(btnIncreaseFont.style.marginRight)
 
+// console.log(window.getComputedStyle(btnDecreaseFont).textdecoration)
