@@ -1,26 +1,8 @@
-input{
-    font-family: 'Raleway',sans-serif;
-}
-header >section{
-    width: 100%;
-    min-height: 100vh;
-    box-sizing: border-box;
-    overflow: hidden;
-    position: relative;
-    background-color: lightblue;
-    text-align: center;
-}
-#todo-input{
-    font-size: 24px;
-    padding:12px 24px;
-    margin-right: 16px;
-    border-radius: 16px;
-    border: 1px solid #ccc;
-    outline: none;
-}
-button{
-    font-size: 24px;
-    margin-top: 24px;
-    margin-right: 36px;
-    padding: 12px 24px;
+#username-err{
+    color:red;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    display: none;
 }
