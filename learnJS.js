@@ -1,38 +1,16 @@
-var btn = document.getElementById('top-btn');
+var list = document.getElementById('todo-list')
+var btnAdd = document.getElementById('add-item')
 
-btn.addEventListener('mousedown', function(){
-    console.log('Mouse Down Event')
-})
-btn.addEventListener('mouseup', function(){
-    console.log('Mouse Up Event')
-})
 
-btn.addEventListener('click', function(){
-    console.log('Click Event')
-})
-btn.addEventListener('dblclick', function(){
-    console.log('Double Click Event')
-})
 
-var overCount = 0;
-var over = document.getElementById('over')
-over.addEventListener('mouseover', function(){
-    var countElement = document.querySelector('#over > p')
-    overCount += 1;
-    countElement.innerHTML = overCount;
-})
-var enter = document.getElementById('enter')
-var enterCount = 0;
-enter.addEventListener('mouseenter', function(){
-    var countElement = document.querySelector('#enter > p')
-    enterElement += 1;
-    countElement.innerHTML = enterCount;
-})
 
-var moveElement = document.getElementById('move')
-var moveCount = 0;
-moveElement.addEventListener('mousemove', function(){
-    var countElement = document.querySelector('#move > p')
-    moveCount += 1;
-    countElement.innerHTML= moveCount;
+btnAdd.addEventListener('click', function(){
+    var newListElement = document.createElement('li')
+    var textNode = document.createTextNode('List Item '+ (list.childElementCount + 1));
+    newListElement.appendChild(textNode)
+    newListElement.id = "item" + (list.childElementCount + 1);
+    // console.log(newListElement)
+    var firstItem = list.firstElementChild
+    // list.appendChild(newListElement, firstItem)
+    list.insertBefore(newListElement, firstItem)
 })
